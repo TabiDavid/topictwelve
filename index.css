@@ -16,11 +16,21 @@ h1{
     width: 300px;
     height: 300px;
     background: crimson;
-    transition: all 10s;
-    animation: skew 3s infinite;
+    animation-direction: alternate;
+    animation: skew 10s infinite;
     transform-style: preserve-3d;
 
 }
+
+@keyframes skew {
+    0% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
 .square{
     
     width: 300px;
@@ -29,10 +39,6 @@ h1{
     text-align: center;
     transform: rotateY(90deg);
 
-}
-
-.box:hover{
-    transform: rotateY(960deg);
 }
 
 
@@ -65,12 +71,13 @@ h1{
   background-color: rgb(95, 39, 112);
   transition: all 5s;
   animation-duration: initial;
-  
+  animation: one 3s infinite;
 }
 
-.boxes:hover{
-
-    transform: scale(2,3);
-    background: chocolate;
-    
-}
+@keyframes one {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(500px, 300px);
+    }}
