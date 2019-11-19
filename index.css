@@ -1,8 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Jomolhari|Roboto&display=swap");
 
 body{
+   background: cornflowerblue;
+  
+  
+}
 
-    font-family: "Jomolhari", sans-serif;
-    background: #009BC4;
+h1{
     text-align: center;
+}
+
+
+.box{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: crimson;
+    transition: all 10s;
+  
+    transform-style: preserve-3d;
+
+}
+.square{
+    
+    width: 300px;
+    height: 300px;
+    background: greenyellow;
+    text-align: center;
+    transform: rotateY(90deg);
+
+}
+
+.box:hover{
+    transform: rotateY(960deg);
+}
+
+
+.content{
+    width: 300px;
+  height: 100px;
+  background-color: rgb(204, 83, 164);
+  
+  transition: all 5s;
+  
+}
+.content:hover{
+    
+    transform: translate(100px,150px); 
+    background-color: blueviolet;
+}
+
+.boxes{
+    margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(95, 39, 112);
+  transition: all 5s;
+  animation-duration: initial;
+  
+}
+
+.boxes:hover{
+
+    transform: scale(2,3);
+    background: chocolate;
+    
 }
